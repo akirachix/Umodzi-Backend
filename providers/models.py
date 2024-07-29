@@ -9,4 +9,4 @@ class Providers(models.Model):
     billing_details=models.CharField(max_length =60)
 
 def _str_(self):
-    return f'{provider_name} {billing_details}'
+    return f'{self.provider_name} {self.billing_details}'

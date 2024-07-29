@@ -11,4 +11,4 @@ class Bills(models.Model):
 
 
 def _str_(self):
-    return f'{bill_payment_id} {user_id}'
+    return f'{self.bill_payment_id} {self.user_id}'

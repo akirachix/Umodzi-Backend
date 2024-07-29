@@ -11,4 +11,4 @@ class Transaction(models.Model):
     time_stamp=models.DateField()
 
 def _str_(self):
-    return f'{user_id} {transaction_type}'
+    return f'{self.user_id} {self.transaction_type}'
