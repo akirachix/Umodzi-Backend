@@ -11,4 +11,4 @@ class Bills(models.Model):
     time_stamp=models.DateField()
 
 def _str_(self):
-    return f'{self.bill_payment_id} {self.user_id}'
+    return f'{self.bill_payment_id} {self.amount}'
