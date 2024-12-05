@@ -1,7 +1,9 @@
 from django.db import models
 from users.models import Users
 
+
 # Create your models here.
+
 
 class Bills(models.Model):
     bill_payment_id=models.SmallIntegerField()
@@ -9,6 +11,8 @@ class Bills(models.Model):
     provider_id=models.SmallIntegerField()
     amount=models.SmallIntegerField()
     time_stamp=models.DateField()
+    
+    
 
 def _str_(self):
     return f'{bill_payment_id} {user_id}'
